@@ -1,0 +1,26 @@
+
+
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# define HEXUPPER "0123456789ABCDEF"
+# define HEXLOWER "0123456789abcdef"
+# define INT_MIN -2147483648
+# define INT_MAX 2147483647
+# define LONG_MIN -9223372036854775808
+# define LONG_MAX +9223372036854775807
+# define UINT_MAX 4294967295
+# define ULONG_MAX 18446744073709551615
+
+# include <stdarg.h>
+# include <unistd.h>
+# include "libft.h"
+
+int		ft_putchar(char c);
+int		ft_putstr(char *s);
+int		ft_puthex(size_t dec, int mode, int count);
+int		ft_putptr(void *p);
+int		ft_putnbr(int i, int ret);
+int		ft_putunbr(size_t i, int ret);
+int		ft_printf(const char *s, ...);
+
+#endif
